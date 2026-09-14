@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+loss_curves.png
+performance_comparison.png
