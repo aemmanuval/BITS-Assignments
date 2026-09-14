@@ -8,13 +8,13 @@ on a real-world tabular dataset, then evaluates and analyzes their performance.
 
 ## Dataset
 
-**Breast Cancer Wisconsin (Diagnostic)**
-- Source: UCI ML Repository (loaded via `sklearn.datasets`)
-- Samples: 569
-- Features: 30 numeric diagnostic measurements
-- Problem: Binary classification (Malignant vs Benign)
-- Primary metric: **Recall** — in medical diagnosis, missing cancer (false negative) is
-  far more costly than a false alarm.
+**Online Shoppers Purchasing Intention**
+- Source: UCI ML Repository
+- Samples: 12,330
+- Features: 17 (page visits, durations, bounce/exit rates, visitor info, etc.)
+- Problem: Binary classification (Purchase vs No Purchase)
+- Primary metric: **F1-Score** — dataset is imbalanced (84.5% non-purchase), so accuracy
+  alone is misleading. F1 balances precision and recall.
 
 ## Project Structure
 
@@ -42,5 +42,5 @@ Outputs:
 | Component | Description |
 |-----------|-------------|
 | Baseline  | Logistic Regression with gradient descent (from scratch) |
-| MLP       | 2 hidden layers, ReLU activations, sigmoid output, backpropagation (from scratch) |
+| MLP       | 2 hidden layers (64, 32), ReLU activations, sigmoid output, backpropagation (from scratch) |
 | Allowed libs | NumPy, Pandas, Matplotlib, Seaborn, sklearn (only for split/scaling/encoding) |
